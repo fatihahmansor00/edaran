@@ -6,6 +6,11 @@ const FeatureList = [
   {
     title: 'Easy to Use',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    secondParagraph :(
+      <>
+        First
+      </>
+    ),
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -16,6 +21,11 @@ const FeatureList = [
   {
     title: 'Focus on What Matters',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    secondParagraph :(
+      <>
+        Second
+      </>
+    ),
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -26,6 +36,11 @@ const FeatureList = [
   {
     title: 'Powered by React',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    secondParagraph :(
+      <>
+        Third
+      </>
+    ),
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -35,7 +50,7 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description,secondParagraph}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -44,6 +59,7 @@ function Feature({Svg, title, description}) {
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
+        <p>{secondParagraph}</p>
       </div>
     </div>
   );
