@@ -138,7 +138,7 @@ const config = {
       },
       // Add metadata and headTags here
       metadata: [
-        { name: 'keywords', content: 'introduction, blog' },
+        { name: 'keywords', content: 'introduction, blog, edaran, edaran docusaurus' },
       ],
 
 

@@ -3,6 +3,8 @@ id: doc1
 title: Introduction
 keywords: 
 - introduction 
+- edaran 
+- edaran docusaurus
 sidebar_label: Introduction 
 toc_min_heading_level: 2
 toc_max_heading_level: 6
