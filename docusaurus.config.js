@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'API Documentation',
-  tagline: 'CUSDEC API Documentation',
+  title: 'Edaran Docusaurus',
+  tagline: 'Edaran Docusaurus',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -138,7 +138,8 @@ const config = {
       },
       // Add metadata and headTags here
       metadata: [
-        { name: 'keywords', content: 'introduction, blog, edaran, edaran docusaurus' },
+        { name: 'keywords', content: 'introduction, edaran, docusaurus, blog' },
+        { name: 'description', content: 'introduction edaran docusaurus'}
       ],
 
 
