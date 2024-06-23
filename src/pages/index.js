@@ -10,8 +10,12 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
+   
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
+      <meta name="description" content="Welcome to the Edara documentation site. Find tutorials, guides, and resources to help you get started with Edara." />
+      <meta name="keywords" content="Edara, documentation, tutorials, guides, resources" />
+      
+           <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
@@ -33,11 +37,15 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Welcome to the Edara documentation site. Find tutorials, guides, and resources to help you get started with Edaran.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-        <p>This is my text</p>
+        <section>
+          <Heading as='h2'>Introduction to Edaran</Heading>
+          <p>This is API documentation for CUSDEC KASTAM. All the deployment or maintenance will be documented in this API Documentation.</p>
+        </section>
+        
       </main>
     </Layout>
   );
