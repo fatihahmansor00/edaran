@@ -5,7 +5,7 @@ description: introduction edaran docusaurus
 keywords: 
 - introduction
 - edaran
-- docusaurus,
+- docusaurus
 sidebar_label: Edaran Docusaurus Introduction
 toc_min_heading_level: 2
 toc_max_heading_level: 6

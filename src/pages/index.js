@@ -13,7 +13,7 @@ function HomepageHeader() {
    
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <meta name="description" content="Welcome to the Edara documentation site. Find tutorials, guides, and resources to help you get started with Edara." />
-      <meta name="keywords" content="Edara, documentation, tutorials, guides, resources" />
+      <meta name="keywords" content="Edaran, documentation, tutorials, guides, resources" />
       
            <div className="container">
         <Heading as="h1" className="hero__title">

@@ -87,6 +87,12 @@ const config = {
           },
         ],
       },
+      algolia:{
+        apiKey: '0c90be0205c32e501b71c621cdad17b3',
+        indexName:'netlify_ad3b8d62-36a6-4c67-8bc7-1e37418fc21f_main_all', 
+        appId:'1761COI4VG',
+        contextualSearch: true,
+      },
       footer: {
         style: 'dark',
         links: [
