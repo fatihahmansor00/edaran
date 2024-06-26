@@ -41,6 +41,15 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          includeCurrentVersion: true, // Include the current version
+          versions: {
+            current: {
+              label: '0.0.0', // Label for the current version
+              path: '/', // Root path for the current version
+              banner: 'none', // Banner type
+              badge: true, // Show the version badge
+            },
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -109,6 +118,16 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          {
+            type: 'dropdown',
+            label: 'Versions',
+            position: 'right',
+            items: [
+              // Add items for each version
+              { label: '0.0.0', to: '/docs/intro' }
+              // Add more versions as needed
+            ],
+          },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',

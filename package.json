@@ -11,12 +11,15 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
     "@docusaurus/core": "3.4.0",
-    "@docusaurus/preset-classic": "3.4.0",
+    "@docusaurus/preset-classic": "^3.4.0",
     "@mdx-js/react": "^3.0.0",
+    "auto-changelog": "^2.4.0",
     "clsx": "^2.0.0",
     "docusaurus-theme-search-typesense": "^0.20.0-0",
     "glob": "^10.4.2",
