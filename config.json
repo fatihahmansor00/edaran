@@ -45,7 +45,6 @@
     
 
 
-
     "attributesToHighlight": [
       "hierarchy",
       "content"
@@ -64,7 +63,6 @@
     ],
     "distinct": true,
     "attributeForDistinct": "url"
-
 
 
   },
@@ -101,7 +99,6 @@
     }
   },
 
-
   "typesense_collection_name": "netlify_ad3b8d62-36a6-4c67-8bc7-1e37418fc21f_main_all",
   "typesense_server": {
     "nodes": [
@@ -114,7 +111,6 @@
     "api_key": "6bdzVvsr1kHr0yBAd5ojjwz9Y2i9jCwV",
     "connection_timeout_seconds": 2
   },
-
 
   "conversation_id": [
     "833762294"
