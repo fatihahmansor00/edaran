@@ -1,50 +1,123 @@
 {
-    "index_name": "docusaurus-2",
-    "start_urls": [
-      "https://docusaurus.io/"
-    ],
-    "sitemap_urls": [
-      "https://docusaurus.io/sitemap.xml"
-    ],
-    "sitemap_alternate_links": true,
-    "stop_urls": [
-      "/tests"
-    ],
-    "selectors": {
-      "lvl0": {
-        "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
-        "type": "xpath",
-        "global": true,
-        "default_value": "Documentation"
-      },
-      "lvl1": "header h1",
-      "lvl2": "article h2",
-      "lvl3": "article h3",
-      "lvl4": "article h4",
-      "lvl5": "article h5, article td:first-child",
-      "lvl6": "article h6",
-      "text": "article p, article li, article td:last-child"
+  "index_name": "netlify_ad3b8d62-36a6-4c67-8bc7-1e37418fc21f_main_all",
+  "start_urls": [
+    "https://edaran-docusaurus.netlify.app/"
+  ],
+  "sitemap_urls": [
+    "https://edaran-docusaurus.netlify.app/sitemap.xml"
+  ],
+  "sitemap_alternate_links": true,
+  "stop_urls": [
+    "/tests"
+  ],
+  "selectors": {
+    "lvl0": {
+      "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
+      "type": "xpath",
+      "global": true,
+      "default_value": "Documentation"
     },
-    "strip_chars": " .,;:#",
-    "custom_settings": {
-      "separatorsToIndex": "_",
+    "lvl1": "article h1, header h1",
+    "lvl2": "article h2",
+    "lvl3": "article h3",
+    "lvl4": "article h4",
+    "lvl5": "article h5, article td:first-child",
+    "lvl6": "article h6",
+    "text": "article p, article li, article td:last-child"
+  },
+  "strip_chars": " .,;:#",
+  "custom_settings": {
+    "separatorsToIndex": "_",
+    "attributesForFaceting": [
+      "language",
+      "version",
+      "type",
+      "docusaurus_tag"
+    ],
+    "attributesToRetrieve": [
+      "hierarchy",
+      "content",
+      "anchor",
+      "url",
+      "url_without_anchor",
+      "type"
+    ],
+    
+
+
+
+    "attributesToHighlight": [
+      "hierarchy",
+      "content"
+    ],
+    "attributesToSnippet": [
+      "content:10"
+    ],
+    "searchableAttributes": [
+      "unordered(hierarchy.lvl0)",
+      "unordered(hierarchy.lvl1)",
+      "unordered(hierarchy.lvl2)",
+      "unordered(hierarchy.lvl3)",
+      "unordered(hierarchy.lvl4)",
+      "unordered(hierarchy.lvl5)",
+      "content"
+    ],
+    "distinct": true,
+    "attributeForDistinct": "url"
+
+
+
+  },
+  "initial_index_settings": {
+    "my_website_index": {
       "attributesForFaceting": [
-        "language",
-        "version",
         "type",
-        "docusaurus_tag"
+        "lang"
       ],
       "attributesToRetrieve": [
         "hierarchy",
         "content",
         "anchor",
-        "url",
-        "url_without_anchor",
-        "type"
-      ]
-    },
-    "conversation_id": [
-      "833762294"
+        "url"
+      ],
+      "attributesToHighlight": [
+        "hierarchy",
+        "content"
+      ],
+      "attributesToSnippet": [
+        "content:10"
+      ],
+      "searchableAttributes": [
+        "unordered(hierarchy.lvl0)",
+        "unordered(hierarchy.lvl1)",
+        "unordered(hierarchy.lvl2)",
+        "unordered(hierarchy.lvl3)",
+        "unordered(hierarchy.lvl4)",
+        "unordered(hierarchy.lvl5)",
+        "content"
+      ],
+      "distinct": true,
+      "attributeForDistinct": "url"
+    }
+  },
+
+
+  "typesense_collection_name": "netlify_ad3b8d62-36a6-4c67-8bc7-1e37418fc21f_main_all",
+  "typesense_server": {
+    "nodes": [
+      {
+        "host": "1fvehzju6d3wratop-1.a1.typesense.net",
+        "port": "443",
+        "protocol": "https"
+      }
     ],
-    "nb_hits": 46250
-  }
+    "api_key": "6bdzVvsr1kHr0yBAd5ojjwz9Y2i9jCwV",
+    "connection_timeout_seconds": 2
+  },
+
+
+  "conversation_id": [
+    "833762294"
+  ],
+  "nb_hits": 46250
+}
