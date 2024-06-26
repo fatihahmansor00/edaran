@@ -1,5 +1,11 @@
 ---
 sidebar_position: 1
+title: Intro 
+description: Introduction Edaran Docusaurus.
+keywords: 
+- introduction
+- edaran
+- docusaurus
 ---
 
 # Tutorial Intro

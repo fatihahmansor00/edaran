@@ -61,7 +61,19 @@ const config = {
         gtag: {
           trackingID:'G-K0RQH380FP',
           anonymizeIP: true,
-        }
+        },
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+          createSitemapItems: async (params) => {
+            const {defaultCreateSitemapItems, ...rest} = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items.filter((item) => !item.url.includes('/page/'));
+          },
+        },
 
       }),
     ],
@@ -191,8 +203,8 @@ const config = {
       },
       // Add metadata and headTags here
       metadata: [
-        { name: 'keywords', content: 'introduction, edaran, docusaurus, blog' },
-        { name: 'description', content: 'introduction edaran docusaurus'}
+        { name: 'keywords', content: 'introduction, edaran, docusaurus' },
+        { name: 'description', content: 'introduction cusdec edaran docusaurus on K1, K2 and K3'},
       ],
 
     }),
