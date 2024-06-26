@@ -59,11 +59,47 @@ const config = {
       }),
     ],
   ],
-
+  themes: ['docusaurus-theme-search-typesense'],
   themeConfig:
     
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      //typesense coding 
+      typesense: {
+        // Replace this with the name of your index/collection.
+        // It should match the "index_name" entry in the scraper's "config.json" file.
+        typesensseCollectionName: 'netlify_ad3b8d62-36a6-4c67-8bc7-1e37418fc21f_main_all',
+  
+        typesenseServerConfig: {
+          nodes: [
+            {
+              host: '1fvehzju6d3wratop-1.a1.typesense.net',
+              port: 443,
+              protocol: 'https',
+            },
+            {
+              host: '1fvehzju6d3wratop-2.a1.typesense.net',
+              port: 443,
+              protocol: 'https',
+            },
+            {
+              host: '1fvehzju6d3wratop-3.a1.typesense.net',
+              port: 443,
+              protocol: 'https',
+            },
+          ],
+          apiKey: 'D0zPhZwWLtgwniJU3zVYpLzFZZBlLljy',
+        },
+  
+        // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
+        typesenseSearchParameters: {},
+  
+        // Optional
+        contextualSearch: true,
+      },
+
+
+
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -87,12 +123,7 @@ const config = {
           },
         ],
       },
-      algolia:{
-        apiKey: '0c90be0205c32e501b71c621cdad17b3',
-        indexName:'netlify_ad3b8d62-36a6-4c67-8bc7-1e37418fc21f_main_all', 
-        appId:'1761COI4VG',
-        contextualSearch: true,
-      },
+      
       footer: {
         style: 'dark',
         links: [
