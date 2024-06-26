@@ -68,7 +68,7 @@ const config = {
       typesense: {
         // Replace this with the name of your index/collection.
         // It should match the "index_name" entry in the scraper's "config.json" file.
-        typesensseCollectionName: 'netlify_ad3b8d62-36a6-4c67-8bc7-1e37418fc21f_main_all',
+        typesenseCollectionName: 'netlify_ad3b8d62-36a6-4c67-8bc7-1e37418fc21f_main_all',
   
         typesenseServerConfig: {
           nodes: [
