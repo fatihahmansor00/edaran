@@ -37,7 +37,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={` ${siteConfig.title}`}
       description="Welcome to the Edara documentation site. Find tutorials, guides, and resources to help you get started with Edaran.">
       <HomepageHeader />
       <main>
