@@ -1,0 +1,4 @@
+User-agent: *
+
+
+Sitemap: https://edaran-docusaurus.netlify.app/sitemap.xml
