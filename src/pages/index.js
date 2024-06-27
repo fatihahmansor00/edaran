@@ -44,7 +44,8 @@ export default function Home() {
         <HomepageFeatures />
         <section>
           <Heading as='h2'>Introduction to Edaran</Heading>
-          <p>This is API documentation for CUSDEC KASTAM. All the deployment or maintenance will be documented in this API Documentation.</p>
+          <p>This is API documentation for CUSDEC KASTAM. 
+            All the deployment or maintenance will be documented in this API Documentation.</p>
         </section>
         
       </main>

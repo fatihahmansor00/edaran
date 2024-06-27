@@ -31,7 +31,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'fr'],
   },
 
   presets: [
@@ -41,6 +41,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: '/',
           includeCurrentVersion: true, // Include the current version
           versions: {
             current: {
@@ -65,6 +66,14 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+       //google analytics
+      gtag: {
+        trackingID: 'G-K0RQH380FP',
+      },
+      sitemap: {
+        changefreq: 'daily',
+        priority: 0.5,
+      },
       }),
     ],
   ],
@@ -73,6 +82,7 @@ const config = {
     
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      
       //typesense coding 
       typesense: {
         // Replace this with the name of your index/collection.
@@ -124,7 +134,7 @@ const config = {
             position: 'right',
             items: [
               // Add items for each version
-              { label: '0.0.0', to: '/docs/intro' }
+              { label: '0.0.0', to: '/' }
               // Add more versions as needed
             ],
           },
@@ -134,10 +144,20 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+          {
+            type: 'doc',
+            docId: 'changelog',
+            label: 'Changelog',
+            position: 'left',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
             position: 'right',
           },
         ],
@@ -195,7 +215,7 @@ const config = {
       // Add metadata and headTags here
       metadata: [
         { name: 'keywords', content: 'introduction, edaran, docusaurus, blog' },
-        { name: 'description', content: 'introduction edaran docusaurus'}
+        { name: 'description', content: 'introduction edaran docusaurus'},
       ],
 
 
