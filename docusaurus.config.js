@@ -66,14 +66,6 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-       //google analytics
-      gtag: {
-        trackingID: 'G-K0RQH380FP',
-      },
-      sitemap: {
-        changefreq: 'daily',
-        priority: 0.5,
-      },
       }),
     ],
   ],
