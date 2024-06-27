@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "0.0.0",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
+    "message": "Tutorial - Basics",
+    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
+    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
+    "message": "Tutorial - Extras",
+    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.API": {
+    "message": "API",
+    "description": "The label for category API in sidebar tutorialSidebar"
+  },
+  "sidebar.docs.category.Changelog": {
+    "message": "Changelog",
+    "description": "The label for category Changelog in sidebar docs"
+  },
+  "sidebar.tutorialSidebar.category.Markdown": {
+    "message": "Markdown",
+    "description": "The label for category Markdown in sidebar tutorialSidebar"
+  }
+}
