@@ -4,6 +4,8 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 import {themes as prismThemes} from 'prism-react-renderer';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Edaran Docusaurus',
@@ -25,7 +27,15 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    locales: ['en', 'my'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      my: {
+        label: 'Bahasa Melayu',
+      },
+    }
   },
   presets: [
     [
@@ -33,6 +43,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
           includeCurrentVersion: true, // Include the current version
@@ -79,12 +91,24 @@ const config = {
       }),
     ],
   ],
-  themes: ['docusaurus-theme-search-typesense'],
+  stylesheets: [
+    {
+      href: '/katex/katex.min.css',
+      type: 'text/css',
+    },
+  ],
+
+  markdown: {
+    mermaid: true,
+  },
+  
+ themes: ["@docusaurus/theme-mermaid", 'docusaurus-theme-search-typesense'],
+
+  // themes: ['docusaurus-theme-search-typesense'],
   themeConfig:
     
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      
       //typesense coding 
       typesense: {
         // Replace this with the name of your index/collection.
@@ -213,6 +237,15 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      // markdown: {
+      //   mermaid: true
+      // },
+      // themes: ["@docusaurus/theme-mermaid"],
+      // mermaid: {
+      //   options: {
+      //     maxTextSize: 50
+      //   }
+      // },
       // Add metadata and headTags here
       metadata: [
         { name: 'keywords', content: 'introduction, edaran, docusaurus, blog' },
