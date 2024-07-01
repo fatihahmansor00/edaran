@@ -25,6 +25,7 @@ const config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'my'],
@@ -37,6 +38,11 @@ const config = {
       },
     }
   },
+
+  markdown: {
+    mermaid: true,
+  },
+
   presets: [
     [
       'classic',
@@ -98,10 +104,6 @@ const config = {
     },
   ],
 
-  markdown: {
-    mermaid: true,
-  },
-  
  themes: ["@docusaurus/theme-mermaid", 'docusaurus-theme-search-typesense'],
 
   // themes: ['docusaurus-theme-search-typesense'],
@@ -170,10 +172,16 @@ const config = {
             label: 'Tutorial',
           },
           {
-            type: 'doc',
-            docId: 'changelog',
-            label: 'Changelog',
+            type: 'docSidebar',
+            sidebarId: 'apiSidebar',
             position: 'left',
+            label: 'API',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'markdownSidebar',
+            position: 'left',
+            label: 'Markdown',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -237,16 +245,6 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      // markdown: {
-      //   mermaid: true
-      // },
-      // themes: ["@docusaurus/theme-mermaid"],
-      // mermaid: {
-      //   options: {
-      //     maxTextSize: 50
-      //   }
-      // },
-      // Add metadata and headTags here
       metadata: [
         { name: 'keywords', content: 'introduction, edaran, docusaurus, blog' },
         { name: 'description', content: 'introduction edaran docusaurus'}
