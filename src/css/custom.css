@@ -5,6 +5,11 @@
  */
 
 /* You can override the default Infima variables here. */
+
+
+@import "https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css";
+
+
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -28,3 +33,12 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+[data-theme='light'] .themedDocusaurus [fill='#FFFF50'] {
+  fill: greenyellow;
+}
+
+[data-theme='dark'] .themedDocusaurus [fill='#FFFF50'] {
+  fill: seagreen;
+}
+
