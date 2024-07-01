@@ -77,7 +77,7 @@ const sidebars = {
         'Markdown/TOC', 
         'Markdown/diagrams',
         'Markdown/math',
-        'Markdown/MyReactPage',
+        
         'admonition'
       ]
     },
