@@ -3,6 +3,9 @@
 // (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import sectionPrefix from './src/remark/section-prefix';
 import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -47,6 +50,15 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            remarkPlugins: [remarkMath],
+            rehypePlugins: [rehypeKatex],
+
+            admonitions: {
+              keywords: ['note', 'tip', 'info', 'warning', 'danger'],
+              extendDefaults: true,
+            },
+            //beforeDefaultRemarkPlugins: [sectionPrefix],
+            
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +68,7 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
         gtag: {
           trackingID:'G-K0RQH380FP',
@@ -78,11 +90,35 @@ const config = {
       }),
     ],
   ],
-  themes: ['docusaurus-theme-search-typesense'],
+  //stylesheets math equation
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
+
+
+  markdown: { mermaid: true,},
+  themes: ['docusaurus-theme-search-typesense', '@docusaurus/theme-mermaid'],
+  
   themeConfig:
     
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+
+      //css for math equation
+      //customCss: require.resolve('./src/css/custom.css'),
+
+      //mermaid coding
+      mermaid:{
+        theme: {light: 'neutral', dark: 'forest'},
+        //options: {maxTextSize:50,},
+      },
+
       //typesense coding 
       typesense: {
         // Replace this with the name of your index/collection.
@@ -208,5 +244,7 @@ const config = {
       ],
 
     }),
+
+    
 };
 export default config;

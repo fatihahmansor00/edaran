@@ -22,6 +22,18 @@ const sidebars = {
         id: 'changelog',
       },
     ],
+    //ni jsx punya yang dekat component
+  
+      Document: [
+        
+        {
+          //id: 'my-document',
+          type: 'link',
+          label: 'My React Page',
+          href: '/MyReactPage',
+        },
+      ],
+    
     // Add other sections as needed
   },
   // But you can create a sidebar manually
