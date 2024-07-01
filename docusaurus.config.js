@@ -3,9 +3,8 @@
 // (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
-import sectionPrefix from './src/remark/section-prefix';
+
+//import sectionPrefix from './src/remark/section-prefix';
 import {themes as prismThemes} from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
@@ -46,8 +45,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
+          
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
           includeCurrentVersion: true, // Include the current version
@@ -103,7 +101,6 @@ const config = {
       }),
     ],
   ],
-<<<<<<< HEAD
   //stylesheets math equation
   stylesheets: [
     {
@@ -119,22 +116,18 @@ const config = {
   markdown: { mermaid: true,},
   themes: ['docusaurus-theme-search-typesense', '@docusaurus/theme-mermaid'],
   
-=======
-  stylesheets: [
-    {
-      href: '/katex/katex.min.css',
-      type: 'text/css',
-    },
-  ],
+  // stylesheets: [
+  //   {
+  //     href: '/katex/katex.min.css',
+  //     type: 'text/css',
+  //   },
+  // ],
 
-  markdown: {
-    mermaid: true,
-  },
   
- themes: ["@docusaurus/theme-mermaid", 'docusaurus-theme-search-typesense'],
+  
+//  themes: ["@docusaurus/theme-mermaid", 'docusaurus-theme-search-typesense'],
 
   // themes: ['docusaurus-theme-search-typesense'],
->>>>>>> 457b32944bc9d3f082fd417fe09d9b4a3150f03d
   themeConfig:
     
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

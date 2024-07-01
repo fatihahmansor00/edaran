@@ -15,10 +15,10 @@ This is the content of the React Page.
 
 <MyReactPage />
 
-![Example banner](./assets/docusaurus-asset-example-banner.png)
+![Example banner](./image/docusaurus-asset-example-banner.png)
 
 # My Markdown page
 
-[Download this docx using Markdown](./assets/docusaurus-asset-example.docx)
+[Download this docx using Markdown](./image/docusaurus-asset-example.docx)
 
-![image dinosaur](./assets/docusaurus.svg)
+![image dinosaur](./image/docusaurus.svg)
