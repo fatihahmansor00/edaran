@@ -7,6 +7,8 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import sectionPrefix from './src/remark/section-prefix';
 import {themes as prismThemes} from 'prism-react-renderer';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Edaran Docusaurus',
@@ -28,7 +30,15 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'my'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      my: {
+        label: 'Bahasa Melayu',
+      },
+    }
   },
   presets: [
     [
@@ -36,7 +46,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           sidebarPath: './sidebars.js',
+          routeBasePath: '/',
           includeCurrentVersion: true, // Include the current version
           versions: {
             current: {
@@ -90,6 +103,7 @@ const config = {
       }),
     ],
   ],
+<<<<<<< HEAD
   //stylesheets math equation
   stylesheets: [
     {
@@ -105,6 +119,22 @@ const config = {
   markdown: { mermaid: true,},
   themes: ['docusaurus-theme-search-typesense', '@docusaurus/theme-mermaid'],
   
+=======
+  stylesheets: [
+    {
+      href: '/katex/katex.min.css',
+      type: 'text/css',
+    },
+  ],
+
+  markdown: {
+    mermaid: true,
+  },
+  
+ themes: ["@docusaurus/theme-mermaid", 'docusaurus-theme-search-typesense'],
+
+  // themes: ['docusaurus-theme-search-typesense'],
+>>>>>>> 457b32944bc9d3f082fd417fe09d9b4a3150f03d
   themeConfig:
     
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -169,7 +199,7 @@ const config = {
             position: 'right',
             items: [
               // Add items for each version
-              { label: '0.0.0', to: '/docs/intro' }
+              { label: '0.0.0', to: '/' }
               // Add more versions as needed
             ],
           },
@@ -179,10 +209,20 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+          {
+            type: 'doc',
+            docId: 'changelog',
+            label: 'Changelog',
+            position: 'left',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
             position: 'right',
           },
         ],
@@ -237,10 +277,19 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      // markdown: {
+      //   mermaid: true
+      // },
+      // themes: ["@docusaurus/theme-mermaid"],
+      // mermaid: {
+      //   options: {
+      //     maxTextSize: 50
+      //   }
+      // },
       // Add metadata and headTags here
       metadata: [
-        { name: 'keywords', content: 'introduction, edaran, docusaurus' },
-        { name: 'description', content: 'introduction cusdec edaran docusaurus on K1, K2 and K3'},
+        { name: 'keywords', content: 'introduction, edaran, docusaurus, blog' },
+        { name: 'description', content: 'introduction edaran docusaurus'}
       ],
 
     }),

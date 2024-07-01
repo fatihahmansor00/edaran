@@ -1,4 +1,18 @@
-# 0.0.0 (2024-06-26)
+## 0.0.0 (2024-06-27)
+
+
+### Bug Fixes
+
+* update docusaurus config ([feb4095](https://github.com/fatihahmansor00/edaran/commit/feb40951f9f58828d5285aab124d198818cad753))
+* update docusaurus config ([fa01751](https://github.com/fatihahmansor00/edaran/commit/fa017518c196de3f3cee2745b1dc8d8f326298b2))
+
+### Features
+
+* consume free online api from github and placeholder ([e05210d](https://github.com/fatihahmansor00/edaran/commit/e05210d09621acb36cde0a567dc72ac430b1632b))
+* install katex, theme mermaid and theme live codeblock ([041c63c](https://github.com/fatihahmansor00/edaran/commit/041c63c9c1044b99b0571ce0fb121752f60293a5))
+* translate site to bahasa melayu ([d0602d7](https://github.com/fatihahmansor00/edaran/commit/d0602d7102c0dffcafd09f5af85a864439766151))
+
+## 0.0.0 (2024-06-26)
 
 
 ### Bug Fixes
