@@ -24,15 +24,15 @@ const sidebars = {
     ],
     //ni jsx punya yang dekat component
   
-      Document: [
+      // Document: [
         
-        {
-          //id: 'my-document',
-          type: 'link',
-          label: 'My React Page',
-          href: '/MyReactPage',
-        },
-      ],
+      //   {
+      //     //id: 'my-document',
+      //     type: 'link',
+      //     label: 'My React Page',
+      //     href: '/MyReactPage',
+      //   },
+      // ],
     
     // Add other sections as needed
   },
