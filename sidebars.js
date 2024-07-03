@@ -56,7 +56,6 @@ const sidebars = {
     {
       type: 'category',
       label: 'API',
-      collapsed: false,
       items: [
         'my-dictionary',
         'API/api-comments',
@@ -72,12 +71,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Markdown',
-      collapsed: false,
       items: [
         'Markdown/TOC', 
         'Markdown/diagrams',
         'Markdown/math',
-        'Markdown/MyReactPage',
         'admonition'
       ]
     },
@@ -86,30 +83,3 @@ const sidebars = {
 };
 
 export default sidebars;
-
-
-// - API/api-comments
-// - API/api-photos
-// - API/dog-pics
-// - API/recipe
-// - API/rick-morty
-// - Markdown/MyReactPage
-// - Markdown/TOC
-// - Markdown/details
-// - Markdown/diagrams
-// - Markdown/head-metadata
-// - Markdown/math
-// - Markdown/maths
-// - admonition
-// - changelog
-// - doc1
-// - intro
-// - my-dictionary
-// - tutorial-basics/congratulations
-// - tutorial-basics/create-a-blog-post
-// - tutorial-basics/create-a-document
-// - tutorial-basics/create-a-page
-// - tutorial-basics/deploy-your-site
-// - tutorial-basics/markdown-features
-// - tutorial-extras/manage-docs-versions
-// - tutorial-extras/translate-your-site
