@@ -119,7 +119,8 @@ const config = {
     },
   ],
 
-  themes: ['docusaurus-theme-search-typesense', '@docusaurus/theme-mermaid'],
+  themes: [ '@docusaurus/theme-mermaid'],
+  //'docusaurus-theme-search-typesense',
   
   // stylesheets: [
   //   {
@@ -128,58 +129,65 @@ const config = {
   //   },
   // ],
 
+//local search
+// plugins: [
+//   [
+//     require.resolve("@easyops-cn/docusaurus-search-local"),
+    
+//     ({
+ 
+//       hashed: true,
+      
+//     }),
+//   ],
+// ], 
   
-  
-//  themes: ["@docusaurus/theme-mermaid", 'docusaurus-theme-search-typesense'],
+
 
   // themes: ['docusaurus-theme-search-typesense'],
   themeConfig:
     
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+       // ...
+    
 
-      //css for math equation
-      //customCss: require.resolve('./src/css/custom.css'),
+      // //typesense coding 
+      // typesense: {
+      //   // Replace this with the name of your index/collection.
+      //   // It should match the "index_name" entry in the scraper's "config.json" file.
+      //   typesenseCollectionName: 'netlify_ad3b8d62-36a6-4c67-8bc7-1e37418fc21f_main_all',
+  
+      //   typesenseServerConfig: {
+      //     nodes: [
+      //       {
+      //         host: 'localhost',
+      //         port: 8108,
+      //         protocol: 'http',
+      //       },
+            
+      //     ],
+      //     apiKey: 'D0zPhZwWLtgwniJU3zVYpLzFZZBlLljy',
+      //   },
+  
+      //   // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
+      //   typesenseSearchParameters: {},
+  
+      //   // Optional
+      //   contextualSearch: true,
+      //   typesenseImportConfig: {
+      //     dir: 'docs', // Directory containing your Docusaurus documentation
+      //     fields: [
+      //       { name: 'create-a-document', type: 'string' },
+      //       { name: 'congratulations', type: 'string' },
+      //       { name: 'create-a-blog-post', type: 'string' },
+      //       { name: 'translate-your-site', type: 'string' },
 
-      //mermaid coding
-      mermaid:{
-        theme: {light: 'neutral', dark: 'forest'},
-        //options: {maxTextSize:50,},
-      },
 
-      //typesense coding 
-      typesense: {
-        // Replace this with the name of your index/collection.
-        // It should match the "index_name" entry in the scraper's "config.json" file.
-        typesenseCollectionName: 'netlify_ad3b8d62-36a6-4c67-8bc7-1e37418fc21f_main_all',
-  
-        typesenseServerConfig: {
-          nodes: [
-            {
-              host: '1fvehzju6d3wratop-1.a1.typesense.net',
-              port: 443,
-              protocol: 'https',
-            },
-            {
-              host: '1fvehzju6d3wratop-2.a1.typesense.net',
-              port: 443,
-              protocol: 'https',
-            },
-            {
-              host: '1fvehzju6d3wratop-3.a1.typesense.net',
-              port: 443,
-              protocol: 'https',
-            },
-          ],
-          apiKey: 'D0zPhZwWLtgwniJU3zVYpLzFZZBlLljy',
-        },
-  
-        // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
-        typesenseSearchParameters: {},
-  
-        // Optional
-        contextualSearch: true,
-      },
+            
+      //     ],
+      //   },
+      // },
 
 
       // Replace with your project's social card
@@ -231,7 +239,29 @@ const config = {
           },
         ],
       },
-      
+      algolia: {
+
+        // Public API key: it is safe to commit it
+        apiKey: '0c90be0205c32e501b71c621cdad17b3',
+
+        indexName: 'netlify_ad3b8d62-36a6-4c67-8bc7-1e37418fc21f_main_all',
+
+        // The application ID provided by Algolia
+        appId: '1761COI4VG',
+        contextualSearch: true, // Optional: Enables contextual search
+  searchParameters: {}, // Optional: Algolia search parameters
+  
+      },
+  
+        
+        //css for math equation
+        //customCss: require.resolve('./src/css/custom.css'),
+  
+        //mermaid coding
+        mermaid:{
+          theme: {light: 'neutral', dark: 'forest'},
+          //options: {maxTextSize:50,},
+        },
       footer: {
         style: 'dark',
         links: [

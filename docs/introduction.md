@@ -1,5 +1,5 @@
 ---
-id: doc1
+id : doc1
 title: Edaran Docusaurus Introduction
 description: introduction edaran docusaurus
 keywords: 
