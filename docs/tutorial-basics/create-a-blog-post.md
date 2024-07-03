@@ -1,5 +1,8 @@
 ---
 sidebar_position: 3
+id: doc3
+title: doc blog
+description: this is document blog
 ---
 
 # Create a Blog Post

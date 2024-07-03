@@ -1,5 +1,8 @@
 ---
 sidebar_position: 6
+id: doc2
+title: doc congratulations
+description: this is document congratulation
 ---
 
 # Congratulations!

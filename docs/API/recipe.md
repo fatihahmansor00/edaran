@@ -1,5 +1,7 @@
 ---
+id: recipe
 title: Recipe
+description: this is the recipe given
 sidebar_position: 3
 ---
 

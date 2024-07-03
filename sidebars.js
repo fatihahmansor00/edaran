@@ -27,43 +27,44 @@ const sidebars = {
   // But you can create a sidebar manually
   
   tutorialSidebar: [
-    'intro',
+    'introduction-edaran-docusaurus',
     'doc1',
+    
     {
       type: 'category',
       label: 'Tutorial Basics',
       items: [
-        'tutorial-basics/create-a-document',
-        'tutorial-basics/congratulations',
-        'tutorial-basics/create-a-blog-post',
-        'tutorial-basics/create-a-page',
-        'tutorial-basics/markdown-features',
-        'tutorial-basics/deploy-your-site'
+        'tutorial-basics/doc4',
+        'tutorial-basics/doc2',
+        'tutorial-basics/doc3',
+        'tutorial-basics/doc5',
+        'tutorial-basics/doc7',
+        'tutorial-basics/doc6'
       ],
     },
     {
       type: 'category',
       label: 'Tutorial Extras',
       items: [
-        'tutorial-extras/manage-docs-versions',
-        'tutorial-extras/translate-your-site',
+        'tutorial-extras/doc-version',
+        'tutorial-extras/doc-translate',
       ],
     },
   ],
 
   apiSidebar: [
-    'changelog',
+    'changelog-v1',
     {
       type: 'category',
       label: 'API',
       collapsed: false,
       items: [
         'my-dictionary',
-        'API/api-comments',
-        'API/api-photos',
-        'API/dog-pics',
+        'API/comments',
+        'API/photos',
+        'API/dog-photo',
         'API/recipe',
-        'API/rick-morty',
+        'API/rick-and-morty',
         ],
     },
   ],

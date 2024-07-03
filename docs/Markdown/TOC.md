@@ -7,7 +7,7 @@ keywords:
 - Content
 - docusaurus
 sidebar_label: TOC - Table of Contents
-
+displayed_sidebar: markdownSidebar
 ---
 
 import TOCInline from '@theme/TOCInline';

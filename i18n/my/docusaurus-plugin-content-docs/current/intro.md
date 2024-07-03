@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+id: intro-i18
 title: Intro 
 description: Introduction Edaran Docusaurus.
 keywords: 

@@ -1,5 +1,8 @@
 ---
 sidebar_position: 2
+id: doc-translate
+title: Translate your site
+description: Let's translate `docs/intro.md` to French
 ---
 
 # Translate your site

@@ -1,5 +1,8 @@
 ---
 sidebar_position: 5
+id: doc6
+title: doc deploy
+description: this is document deploy
 ---
 
 # Deploy your site

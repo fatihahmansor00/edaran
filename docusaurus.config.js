@@ -52,7 +52,7 @@ const config = {
       ({
         docs: {
           
-          sidebarPath: './sidebars.js',
+          sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
           includeCurrentVersion: true, // Include the current version
           versions: {
@@ -198,16 +198,16 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'dropdown',
-            label: 'Versions',
-            position: 'right',
-            items: [
-              // Add items for each version
-              { label: '0.0.0', to: '/' }
-              // Add more versions as needed
-            ],
-          },
+          // {
+          //   type: 'dropdown',
+          //   label: 'Versions',
+          //   position: 'right',
+          //   items: [
+          //     // Add items for each version
+          //     { label: '0.0.0', to: '/' }
+          //     // Add more versions as needed
+          //   ],
+          // },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -225,6 +225,11 @@ const config = {
             sidebarId: 'markdownSidebar',
             position: 'left',
             label: 'Markdown',
+          },
+          {
+            to: '/introduction-edaran-docusaurus',
+            label: 'Docs',
+            position: 'left',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -248,6 +253,7 @@ const config = {
         // The application ID provided by Algolia
         appId: '1761COI4VG',
         contextualSearch: true, // Optional: Enables contextual search
+        
   searchParameters: {}, // Optional: Algolia search parameters
   
       },
@@ -269,7 +275,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/introduction-edaran-docusaurus',
               },
             ],
           },
